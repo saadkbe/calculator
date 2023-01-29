@@ -1,0 +1,162 @@
+:root {
+    --primary-color: rgb(8, 9, 21);
+    --secondary-color: rgb(17, 18, 47);
+    --third-color: rgb(2, 55, 83);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(12, 13, 27);
+    color: white;
+}
+
+h3 {
+    margin-top: 35px;
+    font-weight: 700;
+}
+
+span {
+    color: orange;
+}
+
+.calculator {
+    color: white;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 1109px rgb(0, 0, 0);
+}
+  
+.expression {
+    background-color: var(--primary-color);
+    text-shadow: 0 0 2px white;
+    font-size: 36px;
+    color: white;
+    height: 50px;
+    padding-top: 20%;
+    padding-right: 10px;
+    text-align: end;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: px var(--secondary-color);
+}
+  
+.buttons {
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-inline: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+  
+button {
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    background-color: var(--secondary-color);
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.number {
+    color: white;
+}
+
+.char {
+    color: orange;
+}
+
+
+/* shopping cart css  */
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 970px;
+  }
+  
+  .title {
+    margin-bottom: 30px;
+  }
+  
+  .items,
+  .cart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .item,
+  .cart-item {
+    display: flex;
+    flex-direction: column;
+    color: var(--primary-color);
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgb(210, 210, 210);
+    font-weight: 600;
+    box-shadow: 0 0 9px rgb(0, 0, 0);
+    z-index: 9999;
+  }
+  
+  .item-name,
+  .cart-item-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .item-price,
+  .cart-item-price {
+    font-size: 18px;
+    color: rgb(205, 133, 0);
+  }
+  
+.btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+.btn:hover {
+    background-color: rgb(216, 141, 0);
+    color: var(--primary-color);
+}
+
+.description {
+    color: orange;
+}
